@@ -1,49 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="utf-8">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Weather</title>
 
-    <title>Home</title>
-</head>
-<body>
-    <input type="checkbox" id="nav-toggle" name="nav-toggle">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <link href="css/styles.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <input type="checkbox" name="nav-toggle" id="nav-toggle">
     <header class="site-header">
-        <a href="#" class="site-title">Company Name</a>
-        <label for='nav-toggle' class="fas fa-bars"></label>
-        <label for='nav-toggle' id="menu">Menu</label>
-        <nav class="navigation">
-            <a href="#">
-                Home
-            </a>
-            <a href="#">
-                News
-            </a>
-            <a href="#">
-                Live Cameras
-            </a>
-            <a href="#">
-                Photos
-            </a>
-            <a href="#">
-                Contact
-            </a>
-        </nav>
+      <a href="/" class="site-logo">
+        <i class="fas fa-cloud"></i>
+        Company Name
+      </a>
+
+      <label for="nav-toggle" class="fas fa-bars" id="menu"></label>
+
+      <nav class="navigation">  
+        <a href="/" class="current">Home</a>
+        <a href="/news">News</a>
+        <a href="/live-cameras">Live cameras</a>
+        <a href="/photos">Photos</a>
+        <a href="/contact">Contact</a>
+      </nav>
     </header>
-    <main class="site-content">
-        {{ content }}
+    
+    <main class="site-main">
+      <img src="img/jonathan-roger-494633-unsplash.jpg">
+
+      <section class="week-table">
+        <table id="first-city">
+          <tr>
+            <th id="Monday" class="current-day">Monday</th>
+            <th id="Tuesday">Tuesday</th>
+            <th id="Wednesday">Wednesday</th>
+            <th id="Thursday">Thursday</th>
+            <th id="Friday">Friday</th>
+            <th id="Saturday">Saturday</th>
+            <th id="Sunday">Sunday</th>
+          </tr>
+          <tr>
+            <td>
+              <span id="weather"></span>
+              <span id="max-temp"></span>
+              <span id="low-temp"></span>
+              <span id="will-rain"></span>
+              <span id="wind-speed"></span>
+              <span id="direction"></span>
+            </td>
+            <td>
+              <span id="weather"></span>
+              <span id="max-temp"></span>
+              <span id="low-temp"></span>
+              <span id="will-rain"></span>
+              <span id="wind-speed"></span>
+              <span id="direction"></span>
+            </td>
+            <td>
+              <span id="weather"></span>
+              <span id="max-temp"></span>
+              <span id="low-temp"></span>
+              <span id="will-rain"></span>
+              <span id="wind-speed"></span>
+              <span id="direction"></span>
+            </td>
+            <td>
+              <span id="weather"></span>
+              <span id="max-temp"></span>
+              <span id="low-temp"></span>
+              <span id="will-rain"></span>
+              <span id="wind-speed"></span>
+              <span id="direction"></span>
+            </td>
+            <td>
+              <span id="weather"></span>
+              <span id="max-temp"></span>
+              <span id="low-temp"></span>
+              <span id="will-rain"></span>
+              <span id="wind-speed"></span>
+              <span id="direction"></span>
+            </td>
+            <td>
+              <span id="weather"></span>
+              <span id="max-temp"></span>
+              <span id="low-temp"></span>
+              <span id="will-rain"></span>
+              <span id="wind-speed"></span>
+              <span id="direction"></span>
+            </td>
+            <td>
+              <span id="weather"></span>
+              <span id="max-temp"></span>
+              <span id="low-temp"></span>
+              <span id="will-rain"></span>
+              <span id="wind-speed"></span>
+              <span id="direction"></span>
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="city">
+        <div>
+          <button type="button" id="first-city" class="current-city" >City 1</button>
+          <button type="button" id="second-city" >City 2</button>
+        </div>
+      </section>
+
+      <section class="live-cameras">
+        <div>
+          <h2>Live cameras</h2>
+          <ul>
+            <li>
+              <img src="img/jonathan-roger-494633-unsplash.jpg">
+              <h4>New York</h4>
+              <p>8 oct, 8:00AM</p>
+            </li>
+            <li>
+              <img src="img/jonathan-roger-494633-unsplash.jpg">
+              <h4>Los Angeles</h4>
+              <p>8 oct, 8:00AM</p>
+            </li>
+            <li>
+              <img src="img/jonathan-roger-494633-unsplash.jpg">
+              <h4>Chicago</h4>
+              <p>8 oct, 8:00AM</p>
+            </li>
+            <li>
+              <img src="img/jonathan-roger-494633-unsplash.jpg">
+              <h4>London</h4>
+              <p>8 oct, 8:00AM</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+        
+      <section class="news">
+        <ul>
+          <li>
+            <span>06.10</span>
+            <div>
+              <h5>Lorem ipsum dolor sit</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id corrupti nam doloremque nobis ex doloribus iure natus dolorem omnis cum? Necessitatibus harum eaque dolorum beatae, reiciendis enim blanditiis dicta perspiciatis.</p>
+            </div>
+          </li>
+          <li>
+            <span>06.10</span>
+            <div>
+              <h5>Lorem ipsum dolor sit</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id corrupti nam doloremque nobis ex doloribus iure natus dolorem omnis cum? Necessitatibus harum eaque dolorum beatae, reiciendis enim blanditiis dicta perspiciatis.</p>
+            </div>
+          </li>
+          <li>
+            <span>06.10</span>
+            <div>
+              <h5>Lorem ipsum dolor sit</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id corrupti nam doloremque nobis ex doloribus iure natus dolorem omnis cum? Necessitatibus harum eaque dolorum beatae, reiciendis enim blanditiis dicta perspiciatis.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="after-news">
+        <ul>
+          <li>
+            <h2>Application Features</h2>
+            <ul>
+              <li>
+                <h5>Lorem ipsum dolor sit amet</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem impedit deserunt dolorem ea consequatur quasi.</p>
+              </li>
+              <li>
+                <h5>Lorem ipsum dolor sit amet</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem impedit deserunt dolorem ea consequatur quasi.</p>
+              </li>
+              <li>
+                <h5>Lorem ipsum dolor sit amet</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem impedit deserunt dolorem ea consequatur quasi.</p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2>Weather Moderations</h2>
+            <ul>
+              <li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </li>
+              <li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </li>
+              <li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </li>
+              <li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </li>
+              <li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </li>
+              <li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h2>Example Photo Grid</h2>
+            <div class="photo-grid">
+              <img src="img/jonathan-roger-494633-unsplash.jpg">
+              <img src="img/jonathan-roger-494633-unsplash.jpg">
+              <img src="img/jonathan-roger-494633-unsplash.jpg">
+              <img src="img/jonathan-roger-494633-unsplash.jpg">
+              <img src="img/jonathan-roger-494633-unsplash.jpg">
+              <img src="img/jonathan-roger-494633-unsplash.jpg">
+              <img src="img/jonathan-roger-494633-unsplash.jpg">
+              <img src="img/jonathan-roger-494633-unsplash.jpg">
+              <img src="img/jonathan-roger-494633-unsplash.jpg">
+            </div>
+          </li>
+        </ul>
+      </section>
     </main>
+
     <footer class="site-footer">
-        <span>Boxing © 2018</span>
-        <i class="fab fa-github"></i>
-        <a href="https://github.com/b0jko3/Jekyll-awesome-site">b0jko3</a>
+      <form>
+        <input type="text" placeholder="Enter your e-mail to subscribe">
+        <input type="submit" value="Subscribe">
+      </form>
+      <section>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-google-plus-g"></i>
+        <i class="fab fa-pinterest"></i>
+      </section>
+      <span>Copyright 2019 Company name. Designed by Changed-by-Ivan. All rights reserved</span>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.min.js"></script>
+
+  </body>
 </html>

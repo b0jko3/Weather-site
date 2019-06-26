@@ -1,0 +1,153 @@
+.site-main {
+    background-color: #1E202C;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 17.3em;
+    }
+
+    .week-table {
+        display: flex;
+        justify-content: center;
+
+
+        table {
+            width: 69%;
+            height: 14.5em;
+            border-collapse: collapse;
+            border-radius: 0.5em;
+            margin: 2.4em;
+
+            //.current-day {}
+
+            th {
+                background-color: #2D313D;
+            }
+
+            th:nth-child(even) {
+                background-color: #222430;
+            }
+
+            td {
+                background-color: #323544;
+            }
+
+            td:nth-child(even) {
+                background-color: #262A36;
+            }
+        }
+    }
+
+    .city {
+        display: flex;
+        justify-content: center;
+
+        div {
+            width: 69%;
+
+            button {
+                border: 0.1em solid #3A84AB;
+                border-radius: 1em;
+                background-color: #1E202C;
+                color: #3A84AB;
+                margin: 0em 1.4em 0em 0.3em;
+                padding: 0em 0.5em;
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    .live-cameras {
+        display: flex;
+        justify-content: center;
+        margin: 3em 0 4.3em 0;
+        font-size: 1.1em;
+
+        div {
+            width: 69%;
+
+            ul {
+                display: flex;
+
+                img {
+                    border-radius: 0.5em;
+                    object-fit: cover;
+                    width: 12.2em;
+                    height: 8.5em;
+                    margin: 0.8em 1.1em 0.8em 0em;
+                }
+
+                h4 {
+                    margin-left: 0.2em;
+                    font-size: 0.7em;
+                }
+
+                p {
+                    margin-left: 0.2em;
+                    font-size: 0.5em;
+                }
+            }
+        }
+    }
+
+    .news {
+        background-color: #262A36;
+        display: flex;
+        justify-content: center;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            width: 69%;
+            margin: 3.5em 0em;
+            
+            li {
+                display: flex;
+                flex-direction: row;
+
+                span {
+                    color: #3A84AB;
+                    font-size: 1.4em;
+                    margin-right: 1.3em;
+                }
+
+                div:not(last-child) {
+                    margin-right: 2em;
+                }
+
+                div p {
+                    color: white;
+                    font-size: .8em;
+                }
+            }
+        }
+    }
+
+    .after-news {
+        display: flex;
+        justify-content: center;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            width: 69%;
+
+            li {
+                width: 33%
+            }
+        }
+
+        .photo-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+    
+            img {
+                object-fit: cover;
+                width: 5em;
+                height: 5em;
+            }
+        }
+    }
+}

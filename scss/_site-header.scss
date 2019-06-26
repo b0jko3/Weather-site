@@ -1,0 +1,31 @@
+.site-header {
+    display: block;
+    background-color: #1E202C;
+    color: white;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 2.7em;
+
+    @include mq("tablet-small", min){
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-around;
+    }
+
+    label {
+        @include mq("tablet-small", min){
+            display: none;
+        }
+    }
+
+    a {
+		text-decoration: none;
+		color: white;
+	}
+
+	a:hover {
+        color: #3A84AB;
+        border-color: #3A84AB;
+	}
+}
