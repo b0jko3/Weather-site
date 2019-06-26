@@ -1,0 +1,118 @@
+{
+    "New York": {
+        "Monday": {
+            "weather": "sunny",
+            "max-temp": 23,
+            "low-temp": 18,
+            "will-rain": 20,
+            "wind-speed": 18,
+            "direction": "east"
+        },
+        "Tuesday": {
+            "weather": "snowy",
+            "max-temp": 4,
+            "low-temp": 1,
+            "will-rain": 20,
+            "wind-speed": 18,
+            "direction": "west"
+        },
+        "Wednesday": {
+            "weather": "cloudy",
+            "max-temp": 20,
+            "low-temp": 15,
+            "will-rain": 50,
+            "wind-speed": 21,
+            "direction": "north"
+        },
+        "Thursday": {
+            "weather": "foggy",
+            "max-temp": 16,
+            "low-temp": 8,
+            "will-rain": 20,
+            "wind-speed": 18,
+            "direction": "east"
+        },
+        "Friday": {
+            "weather": "stormy",
+            "max-temp": 15,
+            "low-temp": 6,
+            "will-rain": 20,
+            "wind-speed": 18,
+            "direction": "east"
+        },
+        "Saturday": {
+            "weather": "snowy",
+            "max-temp": 3,
+            "low-temp": 0,
+            "will-rain": 20,
+            "wind-speed": 18,
+            "direction": "east"
+        },
+        "Sunday": {
+            "weather": "snowy",
+            "max-temp": 3,
+            "low-temp": 0,
+            "will-rain": 20,
+            "wind-speed": 18,
+            "direction": "east"
+        }
+    },
+    "San Francisco": {
+        "Monday": {
+            "weather": "sunny",
+            "max-temp": 28,
+            "low-temp": 21,
+            "will-rain": 20,
+            "wind-speed": 18,
+            "direction": "east"
+        },
+        "Tuesday": {
+            "weather": "sunny",
+            "max-temp": 23,
+            "low-temp": 30,
+            "will-rain": 20,
+            "wind-speed": 18,
+            "direction": "west"
+        },
+        "Wednesday": {
+            "weather": "cloudy",
+            "max-temp": 26,
+            "low-temp": 20,
+            "will-rain": 20,
+            "wind-speed": 18,
+            "direction": "east"
+        },
+        "Thursday": {
+            "weather": "foggy",
+            "max-temp": 16,
+            "low-temp": 8,
+            "will-rain": 60,
+            "wind-speed": 5,
+            "direction": "west"
+        },
+        "Friday": {
+            "weather": "stormy",
+            "max-temp": 18,
+            "low-temp": 5,
+            "will-rain": 90,
+            "wind-speed": 60,
+            "direction": "east"
+        },
+        "Saturday": {
+            "weather": "snowy",
+            "max-temp": 3,
+            "low-temp": 0,
+            "will-rain": 20,
+            "wind-speed": 18,
+            "direction": "east"
+        },
+        "Sunday": {
+            "weather": "sunny",
+            "max-temp": 30,
+            "low-temp": 24,
+            "will-rain": 20,
+            "wind-speed": 18,
+            "direction": "east"
+        }
+    }
+}
